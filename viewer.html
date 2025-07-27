@@ -16,16 +16,23 @@
 </head>
 <body>
   <model-viewer 
+    id="tiger-viewer"
     src="https://skylarhknight.github.io/portfolio-3d-models/tiger.glb"
     alt="Tiger 3D Model"
     autoplay
     camera-controls
     interaction-prompt="none"
-    camera-orbit="46.05deg 87.54deg 464.7m" 
-    field-of-view="30deg"
     shadow-intensity="2"
     shadow-softness="1"
     style="background-color: transparent;">
   </model-viewer>
+
+  <script>
+    const modelViewer = document.getElementById('tiger-viewer');
+    modelViewer.addEventListener('load', () => {
+      modelViewer.cameraOrbit = '46.05deg 87.54deg 464.7m';
+      modelViewer.fieldOfView = '30deg';
+    });
+  </script>
 </body>
 </html>
