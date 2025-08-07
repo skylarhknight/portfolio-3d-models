@@ -16,9 +16,9 @@
 </head>
 <body>
   <model-viewer 
-    id="dragonfly-viewer"
+    id="campus-viewer"
     src="https://skylarhknight.github.io/portfolio-3d-models/campus_map_base_model.glb"
-    alt="Dragonfly 3D Model"
+    alt="Campus 3D Model"
     camera-controls
     interaction-prompt="none"
     shadow-intensity="2"
@@ -27,7 +27,7 @@
   </model-viewer>
 
   <script>
-    const modelViewer = document.getElementById('tiger-viewer');
+    const modelViewer = document.getElementById('campus-viewer');
     modelViewer.addEventListener('load', () => {
       modelViewer.cameraOrbit = '-141.6deg 64.22deg 0.7777m';
       modelViewer.fieldOfView = '30deg';
